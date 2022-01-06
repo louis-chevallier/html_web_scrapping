@@ -13,7 +13,7 @@ print(len(l))
 for ee in l :
     #print(ee[0].items())
     title = ee[0].text.replace(' ', '_')
-    print("youtube-dl https://www.youtube.com/ -o %s -x --audio-format mp3 " + dict(ee[0].items())['href'])
+    print("youtube-dl https://www.youtube.com/" + dict(ee[0].items())['href'] + " -o %s -x --audio-format mp3 " )
 
 
 
