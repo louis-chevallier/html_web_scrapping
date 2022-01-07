@@ -1,2 +1,2 @@
 start :
-    python tt2.py
+	python tt2.py
