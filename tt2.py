@@ -6,8 +6,9 @@ with open("html.html", "r") as fd :    html = fd.read()
 #print(html)
 dom = etree.HTML(html)
 e = dom.xpath("//aaa/div/div")
-l = [ ee.xpath("div/span/a") for ee in e]
+l = [ dict(ee.xpath("span/a")[0].items())['data-title'] for ee in e]
 print(len(l))
+print(l)
 l = [ee for ee in l if len(ee) > 0]
 print(len(l))
 
