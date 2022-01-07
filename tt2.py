@@ -9,7 +9,11 @@ e = dom.xpath("//aaa/div/div")
 for ee in e :
 	e1 = ee.xpath("span/a")
 	#print(dict(e1[0].items()))
-	print(dict(e1[0].items())['data-title'])
+	dd = dict(e1[0].items())
+	if 'data-title' in dd:
+		print(dd['data-title'])
+		
+	#print(dict(e1[0].items())['data-title'])
 		  
 		  
 #print(dict(ee.xpath("span/a")[0].items())['data-title'] for ee in e]
