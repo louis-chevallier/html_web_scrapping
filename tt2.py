@@ -2,7 +2,7 @@
 
 from functools import reduce
 from lxml import etree
-with open("tt.html", "r") as fd :    html = fd.read()
+with open("html.html", "r") as fd :    html = fd.read()
 #print(html)
 dom = etree.HTML(html)
 e = dom.xpath("//aaa/div/ytd-grid-video-renderer/div/div")
