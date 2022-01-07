@@ -8,7 +8,8 @@ dom = etree.HTML(html)
 e = dom.xpath("//aaa/div/div")
 for ee in e :
 	e1 = ee.xpath("span/a")
-	print(dict(e1[0].items()))
+	#print(dict(e1[0].items()))
+	print(dict(e1[0].items())['data-title'])
 		  
 		  
 #print(dict(ee.xpath("span/a")[0].items())['data-title'] for ee in e]
