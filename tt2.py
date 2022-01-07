@@ -5,9 +5,9 @@ from lxml import etree
 with open("html.html", "r") as fd :    html = fd.read()
 #print(html)
 dom = etree.HTML(html)
-e = dom.xpath("//aaa/div/ytd-grid-video-renderer/div/div")
-l = [ ee.xpath("div/h3/a") for ee in e]
-
+e = dom.xpath("//aaa/div/div")
+l = [ ee.xpath("div/span/a") for ee in e]
+print(len(l))
 l = [ee for ee in l if len(ee) > 0]
 print(len(l))
 
