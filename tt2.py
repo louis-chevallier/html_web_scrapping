@@ -11,7 +11,7 @@ for ee in e :
 	print(dict(e1[0].items()))
 		  
 		  
-print(dict(ee.xpath("span/a")[0].items())['data-title'] for ee in e]
+#print(dict(ee.xpath("span/a")[0].items())['data-title'] for ee in e]
     
 l = [ dict(ee.xpath("span/a")[0].items())['data-title'] for ee in e]
 print(len(l))
